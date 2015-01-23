@@ -1,7 +1,98 @@
-body,p,h1,h2,h3,h4,h5,h6,ol,ul{
+body,p,h1,h2,h3,h4,h5,h6,ol,ul,a{
     margin:0
 }
 ul,ol{
     padding: 0;
     list-style-type: none;
+}
+html,body{
+    font:14px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*--busic--*/
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    zoom:1;
+}
+.cl:after{
+    content:'';
+    display:block;
+    clear: both
+}
+.cff{
+    color: #fff;
+}
+.tac{
+    text-align: center;
+}
+/*--header--*/
+.header{
+    height:175px;
+    background-color: #333;
+}
+.header h2{
+    height:145px;
+    line-height: 145px;
+}
+.logo{
+    color: #fff;
+    font-size: 40px;
+    outline: none;
+}
+.nav li{
+    display: inline-block;
+    font-family: "微软雅黑";
+}
+.nav a{
+    display: block;
+    padding: 0 50px;
+    height:30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #0090FF;
+}
+.list{
+    min-height: 400px;
+    padding: 40px 0;
+}
+.list li{
+    padding: 15px 0;
+}
+.list h3{
+    padding: 5px 0;
+}
+.list a:hover{
+    text-decoration: underline;
+}
+.list p{
+    margin-top: 5px;
+}
+.footer{
+    height:90px;
+    line-height: 90px;
+    color: #fff;
+    background-color: #333;
+}
+.loading{
+    position: fixed;
+    height:100%;
+    width: 100%;
+    left:0;
+    top:0;
+    background:url(../images/loading.gif) center center no-repeat;
 }
