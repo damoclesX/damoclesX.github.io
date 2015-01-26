@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style id="css">
+		body,ul,input{margin: 0;padding: 0;list-style-type: none;}
+		body{background: url(images/bodybg.png);}
+		.wrap{width: 670px;height: 448px;margin: 50px auto;position: relative;}
+		.wrap ul{width: 670px;height: 448px;-webkit-transform-style: preserve-3d;-webkit-perspective:800px;position: absolute;left:0;top:0;}
+		.wrap ul li{width: 65px;height:54px;border: 1px solid rgba(0,0,0,0);background-origin:border-box;float: left;}
+		.wrap ul:nth-of-type(1) li{background: url(images/1.jpg) no-repeat left top;}
+		.wrap ul:nth-of-type(2) li{background: url(images/2.jpg) no-repeat left top;}
+		.wrap ul:nth-of-type(3) li{background: url(images/3.jpg) no-repeat left top;}
+		.wrap ul:nth-of-type(4) li{background: url(images/4.jpg) no-repeat left top;}
+		.wrap input{border: none;width: 100px;height: 100px;border-radius: 100%;position: absolute;top:174px;color: #fff;-webkit-transition:1s background ;cursor: pointer;background: #777;font-family: "微软雅黑";outline: none;z-index: 100;}
+		.wrap input:hover{background: #000;}
+		#go{right:-110px;}
+		#back{left:-110px;}
+	</style>
+</head>
+<body>
+	<div class="wrap" id="box">
+		<input type="button" value="下一张" id="go">
+		<input type="button" value="上一张" id="back">	
+		<ul class="box_list">
+		</ul>
+		<ul class="box_list">
+		</ul>
+		<ul class="box_list">
+		</ul>
+		<ul class="box_list">
+		</ul>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>

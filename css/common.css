@@ -76,8 +76,11 @@ a{
 .list h3{
     padding: 5px 0;
 }
-.list a:hover{
-    text-decoration: underline;
+.list h3 *{
+    transition:all .5s;
+}
+.list h3:hover i,.list h3:hover a{
+    color:#0090FF;
 }
 .list p{
     margin-top: 5px;
@@ -95,4 +98,24 @@ a{
     left:0;
     top:0;
     background:url(../images/loading.gif) center center no-repeat;
+}
+.pagination{
+    margin-bottom: 50px;
+}
+.pagination li{
+    display: inline-block;
+}
+.pagination a{
+    display: block;
+    padding:5px 10px;
+    border: 1px solid #000;
+    text-align: center;
+    margin-right: 5px;
+}
+.pagination .active a{
+    background-color: #333;
+    color: #fff;
+}
+i{
+    padding-left: 5px;
 }
