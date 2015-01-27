@@ -9,6 +9,21 @@ ready(function(){
         data = los._github?JSON.parse(los._github) : null;//所有数据
 
     if(!data){
+        init();
+    }else{
+        if(isUpdate(data.version)){
+            console.log('需要更新')
+            los.removeItem('_github');
+            init();
+        }else{
+            totalPage = Math.ceil(data.list.length/pageSize);
+            if(currentPage>totalPage){
+                currentPage = totalPage;
+            }
+            renderPage(data.list,currentPage)
+        }
+    }
+    function init(){
         ajax('data/all.json',function(res){
             var res = JSON.parse(res);
             var list = res.list.sort(function(o1,o2){
@@ -24,12 +39,15 @@ ready(function(){
 
             renderPage(list,currentPage);
         })
-    }else{
-        totalPage = Math.ceil(data.list.length/pageSize);
-        if(currentPage>totalPage){
-            currentPage = totalPage;
+    }
+    function isUpdate(version){
+        var oVersion = new Date();
+        var sNowVersion = oVersion.getFullYear()+'-'+(oVersion.getMonth()+1)+'-'+oVersion.getDate();
+        if(sNowVersion == version){
+            return false
+        }else{
+            return true
         }
-        renderPage(data.list,currentPage)
     }
     function renderPage(list,page){
         oList.style.display = 'none';
