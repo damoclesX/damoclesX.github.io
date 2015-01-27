@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li{margin: 0;padding: 0;list-style-type: none;}
+		img{border: none;vertical-align: top;}
+		a{text-decoration: none;}
+		.slider{position: relative;width: 900px;height:300px;margin:10px auto;overflow: hidden;}
+		.slider ul{position: absolute;left:0;top:0;width:2700px;z-index:1;overflow: hidden;}
+		.slider ul li{float: left;}
+		.slider-btn{position: absolute;width:30px;height:50px;top:125px;z-index:2;color: #999;text-align: center;font: normal 20px/50px "微软雅黑";background: #fff;opacity: .5;filter:alpha(opacity=50);}
+		.slider-prev{left:0;border-radius: 0 5px 5px 0;}
+		.slider-next{right:0;border-radius:5px 0 0 5px;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul>
+			<li><a href="javascript:;"><img src="images/1.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/2.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/3.jpg" alt=""></a></li>
+		</ul>
+		<a href="javascript:;" class="slider-btn slider-prev"><</a>
+		<a href="javascript:;" class="slider-btn slider-next">></a>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>

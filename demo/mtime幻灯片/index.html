@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,ol,h3,p{margin: 0;padding: 0;list-style-type: none;}
+		img{vertical-align: bottom;border: none;}
+		a{text-decoration: none;color: #000;}
+		.slider{width: 960px;height:300px;margin:10px auto;position: relative;overflow: hidden;}
+		.slider a{color: #fff;}
+		.slider-contents li{display: none;}
+		.slider-btns{position: absolute;right:0;bottom: 13px;z-index:100;}
+		.slider-btns li{float: left;margin-right: 10px;}
+		.slider-btns li.active a{border: 2px solid #FEC027;padding: 0;}
+		.slider-btns li a{display: block;width:46px;height:46px;padding:2px;position: relative;}
+		.slider-btns li.active em{display: block;position: absolute;top:-10px;*top:-30px;left:12px;border-left: 10px solid transparent;border-right: 10px solid transparent;border-bottom: 10px solid  #FEC027;}
+		.slider-btns li a:hover{border: 2px solid #FEC027;padding: 0;}
+		.slider-links{height:76px;width: 960px;position: absolute;left:0;bottom: 0;z-index:99;color: #fff;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');background:rgba(0,0,0,0.5);}
+		.slider-links li{height:76px;display: none;padding-left: 20px;}
+		.slider-links li h3{height:46px;font:normal bold 24px/46px "宋体";}
+		.slider-links li p{color: #CACACA;font-size: 14px;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul class="slider-contents">
+			<li style="display:block;"><a href="javascript:;"><img src="images/1.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/2_1.jpg" alt=""></a><a href="javascript:;"><img src="images/2_2.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/3_1.jpg" alt=""></a><a href="javascript:;"><img src="images/3_2.png" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/4_1.jpg" alt=""></a><a href="javascript:;"><img src="images/4_2.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/5_1.jpg" alt=""></a><a href="javascript:;"><img src="images/5_2.png" alt=""></a></li>
+		</ul>
+		<ol class="slider-btns">
+			<li class="active"><a href="javascript:;"><em></em><img src="images/1_3.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><em></em><img src="images/2_3.jpg" alt=""></a></a></li>
+			<li><a href="javascript:;"><em></em><img src="images/3_3.jpg" alt=""></a></a></li>
+			<li><a href="javascript:;"><em></em><img src="images/4_3.jpg" alt=""></a></a></li>
+			<li><a href="javascript:;"><em></em><img src="images/5_3.jpg" alt=""></a></a></li>
+		</ol>
+		<div class="slider-links">
+			<ul>
+				<li style="display:block;">
+					<h3><a href="javascrip:;">票房迎井喷全民皆娱乐：2013华语娱乐圈大事记</a></h3>
+					<p>新导演上位、综艺井喷、票房突破200亿，2013年的华语娱乐圈，经历着剧烈的新旧更替。</p>
+				</li>
+				<li>
+					<h3><a href="javascrip:;">克鲁尼"大寻宝家"海量新照 全豪华戏骨阵容抢眼</a></h3>
+					<p>本片阵容强大，云集马特·达蒙，比尔·默瑞、凯特·布兰切特、让·杜雅尔丹等戏骨。</p>
+				</li>
+				<li>
+					<h3><a href="javascrip:;">"龙虎少年队2"首发正式海报 好基友拔枪贱相十足</a></h3>
+					<p>乔纳·希尔与查宁·塔图姆回归，卧底生涯从高中过渡到大学，本片6月13日北美上映。</p>
+				</li>
+				<li>
+					<h3><a href="javascrip:;">"泰迪熊"导演新片曝海报 塞隆麦克法兰齐亮相</a></h3>
+					<p>赛思麦克法兰、尼尔·帕特里克·哈里斯、查理兹塞隆、阿曼达塞弗里德等造型曝光。</p>
+				</li>
+				<li>
+					<h3><a href="javascrip:;">主创答疑解惑：改造西游记，没那么容易！</a></h3>
+					<p>将《西游记》搬上大银幕，这实在是个吃力不讨好的题材，影片势必引发大众的争议。</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
