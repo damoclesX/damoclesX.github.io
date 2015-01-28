@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,a{margin: 0;padding: 0;list-style: none;}
+		body{overflow: hidden;}
+		img{vertical-align: middle;box-shadow: 0 0 4px #000;padding: 5px;background: #fff;border: none; width:100%;}
+		.slider{width:100%;height:500px;position: relative;margin: 50px 0;}
+		.slider div{width:200px;height:112px;position: absolute;z-index:1000;top:194px;}
+		.slider div a{position: absolute;top:0;width:76px;height:112px;}
+		.slider div span{position: absolute;top:0;width:106px;height:112px;opacity: 0;filter:alpha(opacity=0);}	
+		.slider_prev{left:270px;}	
+		.slider_prev a{background: url(images/prev.png);left:0;}
+		.slider_prev span{background: url(images/prev_txt.png);left:94px;}		
+		.slider_next{right:270px;}
+		.slider_next a{background: url(images/next.png);right:0;}
+		.slider_next span{background: url(images/next_txt.png);right:94px;}
+		.slider ul{position: relative;width:960px;height:350px;margin: 0 auto;top:75px;}
+		.slider li{position: absolute;}	
+
+		.pos1{left:-85px;top:94px;z-index:1;opacity: 0;width:300px;}
+		.pos2{left:-5px;top:69px;z-index:2;opacity: .3;width: 400px;}
+		.pos3{left:75px;top:43px;z-index:3;opacity: .6;width: 500px;}
+		.pos4{left:175px;top:18px;z-index:4;opacity: 1;width:600px;}
+		.pos5{left:375px;top:43px;z-index:3;opacity: .6;width:500px;}
+		.pos6{left:555px;top:69px;z-index:2;.opacity: .3;width:400px;}
+		.pos7{left:735px;top:94px;z-index:1;opacity: 0;width:300px;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<div class="slider_prev">
+			<a href="javascript:;"></a><span></span>
+		</div>
+		<div class="slider_next">
+			<a href="javascript:;"></a><span></span>
+		</div>
+		<ul>
+			<li class="pos1"><a href="javascript:;"><img src="images/1.jpg" alt=""></a></li>
+			<li class="pos2"><a href="javascript:;"><img src="images/2.jpg" alt=""></a></li>
+			<li class="pos3"><a href="javascript:;"><img src="images/3.jpg" alt=""></a></li>
+			<li class="pos4"><a href="javascript:;"><img src="images/4.jpg" alt=""></a></li>
+			<li class="pos5"><a href="javascript:;"><img src="images/5.jpg" alt=""></a></li>
+			<li class="pos6"><a href="javascript:;"><img src="images/6.jpg" alt=""></a></li>
+			<li class="pos7"><a href="javascript:;"><img src="images/7.jpg" alt=""></a></li>
+			<li class="pos7"><a href="javascript:;"><img src="images/8.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>

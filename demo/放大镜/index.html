@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{margin: 0;padding: 0;}
+		img{vertical-align: middle;}
+		.magnifier{width:1000px;height:333px;margin:10px auto;overflow: hidden;}
+		.magnifier div{float: left;width:500px;position: relative;}
+		.magnifier div div{width:100px;height:66px;background: #000;position: absolute;left:0;top:0;opacity: .6;filter:alpha(opacity=60);cursor: move;display: none;}
+		.magnifier .big{overflow: hidden;height:333px;}
+		.magnifier .big img{position: absolute;display: none;}
+	</style>
+</head>
+<body>
+	<div class="magnifier" id="magnifier">
+		<div class="small">
+			<img src="images/small.png" alt="">
+			<div></div>
+		</div>
+		<div class="big">
+			<img src="images/big.png" alt="">
+		</div>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>

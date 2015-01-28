@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,ol,li{margin: 0;padding: 0;}
+		ul,ol{list-style: none}
+		img{border: none;vertical-align: bottom;}
+		.slider{width:640px;height:240px;margin: 10px auto;overflow: hidden;position: relative;}
+		.slider  ul li{float: left;}
+		.slider ol{position: absolute;bottom: 10px;right:0;z-index:100;}
+		.slider ol li{float: left;width:8px;height:8px;border-radius: 100%;background-color: #ffe1ea;cursor: pointer;margin-right: 8px;}
+		.slider ol li.selected{background-color: #FF6699;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul>
+			<li><a href="javascript:;"><img src="images/1.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/2.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/3.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/4.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/5.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/6.jpg" alt=""></a></li>
+		</ul>
+		<ol>
+			<li class="selected"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
