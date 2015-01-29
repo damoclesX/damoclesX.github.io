@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,ol{margin: 0;padding: 0;list-style: none}
+		img{width:500px;height:281px;vertical-align: middle;}
+		.slider{width:500px;height:281px;margin:100px auto;overflow: hidden;position: relative;}
+		.slider ul{position: absolute;left:0;top:0;}
+		.slider ol{position: absolute;:0;bottom:8px;left:200px;}
+		.slider ol li{float: left;width:12px;height:12px;border-radius: 100%;background: #999;box-shadow: inset 0 0 0 #000;margin-right: 8px;cursor: pointer;}
+		.slider ol li.active{background: #ff5400;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+		</ul>
+		<ol>
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>

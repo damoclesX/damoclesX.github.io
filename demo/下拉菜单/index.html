@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,p,li{margin: 0;padding: 0;list-style-type: none;}
+		body{background: url(images/bodybg.jpg);font:16px "微软雅黑";}
+		.list{width:318px;margin: 20px auto;}
+		.list ul{position: relative;}	
+		.list li,.btn{height:58px;width:238px;line-height: 58px;margin-bottom: 5px;box-shadow:0 0 3px #999;cursor: pointer;padding-left: 80px;}
+		.list .btn{display: block;width:318px;text-decoration: none;color: #000;text-align: center;padding-left: 0;background: #fff;position: relative;}		
+		.list .bg1{background:#fff url(images/ico_01.png) 10px center no-repeat;}
+		.list .bg2{background:#fff url(images/ico_02.png) 10px center no-repeat;}
+		.list .bg3{background:#fff url(images/ico_03.png) 10px center no-repeat;}
+		.list .bg4{background:#fff url(images/ico_04.png) 10px center no-repeat;}
+		.list .bg5{background:#fff url(images/ico_05.png) 10px center no-repeat;}
+		.list .bg6{background:#fff url(images/ico_06.png) 10px center no-repeat;}
+		.btn i{position: absolute;right:50px;top:24px;*height:10px;}
+		i.more{border-top: 10px solid #666;border-left: 10px solid transparent;border-right: 10px solid transparent;}
+		i.less{border-bottom: 10px solid #666;border-left: 10px solid transparent;border-right: 10px solid transparent;*top:14px;}
+	</style>	
+	<script src="js/animate.js"></script>
+	<script src="js/base.js"></script>
+</head>
+<body>
+	<div class="list" id="list">
+		<p><a href="javascript:;" class="btn">请选择<i class="more"></i></a></p>
+		<ul>
+			<li class="bg1">关于我们</li>
+			<li class="bg2">联系我们</li>
+			<li class="bg3">官网首页</li>
+			<li class="bg4">课程案例</li>
+			<li class="bg5">智能社公益</li>
+			<li class="bg6">智能社论坛</li>
+		</ul>
+	</div>
+</body>
+</html>

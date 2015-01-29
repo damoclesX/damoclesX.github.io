@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,ol{margin: 0;padding: 0;list-style-type: none;}
+		.slider{width:500px;height:281px;margin:50px auto;position: relative;overflow: hidden;}
+		img{width:500px;height:281px;vertical-align: middle;}
+		.slider li{float: left;}
+		.slider ul{width:3500px;position: absolute;left:0;top:0;}
+		.slider ol{position: absolute;right:0;bottom: 10px;left:205px;z-index:1000;}
+		.slider ol li{width:10px;height: 10px;background: #ddd;border-radius: 100%;margin-right: 10px;cursor: pointer;}
+		.slider ol li.active{background: #ff5400;}
+		.slider .btns{position: absolute;width:40px;height:80px;line-height: 80px;font-size: 40px;color: #fff;text-decoration: none;text-align: center;top:100px;background: #555;opacity: .7;filter:alpha(opacity=70);transition:all .5s;}
+		.slider .btns:hover{
+			color: #999;
+		}
+		.prev{left:0;}
+		.next{right:0;}
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<ul>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+		</ul>
+		<ol>
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<a href="javascript:;" class="btns prev">&lt;</a>
+		<a href="javascript:;" class="btns next">&gt;</a>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li{margin: 0;padding: 0;list-style-type: none;}
+		body{background: url(images/bg.gif);}
+		img{width:900px;}
+		.accordion{width:1100px;height:506px;margin: 30px auto;box-shadow: 0 0 10px #000;}
+		.accordion ul{width:1100px;height:506px;position: relative;overflow: hidden;}
+		.accordion ul li{position: absolute;left:0;top:0;cursor: pointer;}
+		.accordion li i{display: block;width:900px;height:506px;background: #000;opacity: .5;filter:-alpha(opacity=50);position: absolute;left:0;top:0;}
+	</style>
+</head>
+<body>
+	<div class="accordion" id="accordion">
+		<ul>
+			<li><img src="images/1.jpg" alt=""><i></i></li>
+			<li><img src="images/2.jpg" alt=""><i></i></li>
+			<li><img src="images/3.jpg" alt=""><i></i></li>
+			<li><img src="images/4.jpg" alt=""><i></i></li>
+			<li><img src="images/5.jpg" alt=""><i></i></li>
+		</ul>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>
