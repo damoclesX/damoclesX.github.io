@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,ol,li,h3,p{margin: 0;padding: 0;list-style-type: none;}
+		img{border: none;vertical-align: middle;}
+		a{text-decoration: none;}
+		.slider{position: relative;width:100%;height:506px;}
+		.slider ul li{position: absolute;z-index:1;opacity: .5;filter:alpha(opacity=50);}
+		.slider li a{display: block;color: #fff;font-family: \5fae\8f6f\96c5\9ed1, \u9ed1\u4f53, "Lucida Grande";text-shadow:1px 1px 1px #444;}
+		.slider img{width: 100%;}
+		.slider h3{font-size:28px;}
+		.slider div{position: absolute;z-index:4;left:10%;top:55%;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#19000000', endColorstr='#19000000');background:rgba(0,0,0,0.1);padding: 10px;max-width: 50%;_width:50%;}
+		.slider p{width:78%;font-size: 14px;margin:10px;line-height: 1.3em;}
+		.slider-btn{position: absolute;z-index:9999;width:75px;height:75px;text-align: center;line-height: 75px;top:215px;font-size: 50px;color: #fff;text-shadow:1px 1px 1px #000;border-radius: 10px;}
+		.slider-btn:hover{background: #000;opacity: .3;filter:alpha(opacity=50);}
+		.slider-prev{left:30px;}
+		.slider-next{right:30px;}
+		.slider ol{position: absolute;z-index: 9999;width: 99%;left:10px;top:95%;text-align: center;font-size: 0;}
+		.slider ol li{display: inline-block;width:13px;height:13px;line-height: 13px;font-size:13px;background: #000;opacity: .5;filter:alpha(opacity=50);border-radius: 100%;margin-right: 20px;box-shadow:inset 0 0 3px #000;zoom:1;*display: inline;cursor: pointer;}
+		.slider ol li.active{background: #79b900;}
+
+	</style>
+</head>
+<body>
+	<div class="slider" id="slider">
+		<a href="javascript:;" title="上一张" class="slider-btn slider-prev"><</a>
+		<a href="javascript:;" title="下一张" class="slider-btn slider-next">></a>
+		<ul>			
+			<li style="z-index:2;opacity: 1;filter:alpha(opacity=100);">
+				<a href="javascript:;">
+					<img src="images/1.jpg" alt="">
+					<div>
+						<h3>千呼万唤始出来 iPad版音悦台客户端隆重上线</h3>
+						<p>音悦台HD，专为iPad制定的超清MV的免费音乐应用，拥有国内最大的正版高清MV曲库！音悦台HD，看超清MV更过瘾！查看、下载最新发布的MV及时浏览V榜上榜歌曲，欣赏并创建精彩悦单，订阅艺人MV更新，无需担心错过最新的MV发布。还在等什么，赶快装进你的iPad吧！</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/2.jpg" alt="">
+					<div>
+						<h3>音悦V榜特别企划 歌手进军演艺界</h3>
+						<p>欧美歌手大举进军演艺界，实力恶搞两极化。Taylor Swift大闹婚礼现场；Justin Timberlake展露表演演唱双实力；Lady GaGa雷人跨足动作片；Selena Gomez演技遭差评。玩票有风险，小心金酸梅奖的眷顾哦！</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/3.jpg" alt="">
+					<div>
+						<h3>田馥甄：馥杂人格甄性情</h3>
+						<p>是高贵冷艳还是热情如火？是感性甜妹还是理性甄哥？【馥】杂人格为你一一剖析~首首精致的歌曲都是田馥甄的肺腑之言吗？【田】言密语圈叉作答为你逐个揭晓~表达方式极其与众不同的个性女这次又创造了怎样的『田氏语录』？更有“甄性情百分百”，带你探究田馥甄眼中的自己！~音悦大来宾田馥甄专场，满满的【甄】材实料，不要错过喔！~</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/4.jpg" alt="">
+					<div>
+						<h3>音悦V榜 火热播映中</h3>
+						<p>音悦V榜2014全新出击，打造火热全新播榜节目！将揭榜节目化，以新颖有趣的视角为你解读最新最热的榜中MV！在这里，再也看不到单调的排名。在这里，将告别无聊的榜单解说。一起来体验吧！</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/5.jpg" alt="">
+					<div>
+						<h3>台哥送福利啦，惊喜好礼等你来抢！</h3>
+						<p>新鲜出炉的大咖签名照，最给力的演唱会门票都在音悦台！你和你的小伙伴们是否都已迫不及待入手了呢？那就赶快行动起来享受台哥给你的专属福利吧！</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/6.jpg" alt="">
+					<div>
+						<h3>张靓颖《微笑以后》</h3>
+						<p>张靓颖 《微笑以后》MV首播！此曲由“R&B翘楚”方大同特别为张靓颖量身订作。MV以隽永而充满质感的黑片默片手法，以“剧中剧”的概念扮演自己在真实世界中的角色“女明星张靓颖”。MV还曝光了很多少见的幕后拍摄过程，力求为大家呈现女明星神秘而真实的一天生活。</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/7.jpg" alt="">
+					<div>
+						<h3>陶晶莹《嗯嘛》</h3>
+						<p>陶晶莹新专辑《真的假的》第四波主打《嗯嘛》MV首播！这首歌由周杰伦作曲，歌词由方文山特别为陶晶莹量身打造，MV由周杰伦执导，耗资千万打造三大场景，分别是由周董提供的霓虹古董车、金色卡式录音机加唱盘、以及彷造陶晶莹表情打造的“美杜莎”女皇场景。</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/8.jpg" alt="">
+					<div>
+						<h3>独家首播：《爱着爱着就永远》</h3>
+						<p>田馥甄新专辑《渺小》第四波主打「爱着爱着就永远」MV官方版独家首播。「爱着爱着就永远」唱出对爱情仍抱有热切渴望的现代男女心情，作曲张简君伟都会民谣的旋律加上徐世珍细腻温热的歌词，唱出包括田馥甄在内每一个对爱怀抱渴求的谦卑心声。</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+						<img src="images/9.jpg" alt="">
+					<div>
+						<h3>口袋·FAN 把你的偶像装进口袋里</h3>
+						<p>睡不着过后，梦游到这里——闪闪发亮的#口袋·炎亚纶#，这是炎亚纶专属APP，新鲜资讯影像，勾搭交流平台，为每一个布丁纪念永恒，这里没有黑暗只有挡不住的太阳，关于阿布有爱的一切都在这里！【IOS版和Android版均已上线】~布丁们快把亚纶装进口袋里面吧！</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ol>
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

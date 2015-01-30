@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li{margin: 0;padding: 0;list-style-type: none;}
+		body{background: url(images/bodybg.png) left top ;overflow: hidden;}
+		img{vertical-align: bottom;border: none;}
+		.thumb{width:800px;margin:100px auto;position: relative;}
+		.thumb ul{height:400px;position: relative;}
+		.thumb li{width:200px;height:200px;float: left;background: url(images/bg_thumb.jpg) center center no-repeat;}
+		.thumb li img{opacity: .7;filter:alpha(opacity=70);box-shadow: 0 0 5px #000;}
+		.thumb li a{display: block;padding: 5px;}
+		.thumb a:hover img{opacity: 1}
+		.thumb div{position: absolute;right:-78px;top:165px;}
+		.thumb div a{display: block;width:39px;height:25px;margin-bottom: 20px;}
+		.thumb .prev{background: url(images/prev.png);}
+		.thumb .next{background: url(images/next.png);}
+	</style>
+</head>
+<body>
+	<div class="thumb" id="thumb">
+		<ul>
+			<li><a href="javascript:;"><img src="images/photo/01.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/02.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/03.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/04.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/05.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/06.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/07.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/08.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/09.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/10.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/11.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/12.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/13.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/14.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/15.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/16.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/17.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/18.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/19.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="images/photo/20.jpg" alt=""></a></li>
+		</ul>
+		<div>
+			<a href="javascript:;" class="prev"></a>
+			<a href="javascript:;" class="next"></a>			
+		</div>
+	</div>
+	<script src="js/animate.js"></script>
+	<script src="js/base.js"></script>
+</body>
+</html>
