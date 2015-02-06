@@ -29,9 +29,7 @@ ready(function(){
     function init(){
         ajax('data/all.json',function(res){
             var res = JSON.parse(res);
-            var list = res.list.sort(function(o1,o2){
-                return -(new Date(o1.pubdate) - new Date(o2.pubdate));
-            });
+            var list = res.list.reverse();            
             totalPage = Math.ceil(list.length/pageSize);
             data = {
                 version : res.version,
@@ -44,14 +42,14 @@ ready(function(){
         })
     }
     function isUpdate(version){
-        var oVersion = new Date();
+        /*var oVersion = new Date();
         var sNowVersion = oVersion.getFullYear()+'-'+(oVersion.getMonth()+1)+'-'+oVersion.getDate();
         if(sNowVersion == version){
             return false
         }else{
             return true
-        }        
-        //return true
+        }  */      
+        return true
     }
     function renderPage(list,page){
         oList.style.display = 'none';
@@ -62,7 +60,7 @@ ready(function(){
             var url = 'demo/'+list[i].url+'/';
             if(bDemo){
                 var desc = list[i].desc.length<100?list[i].desc:list[i].desc.substring(0,100)+'...';
-                str+='<img src="./images/'+(list[i].img || 'default')+'.jpg" alt="'+list[i].name+'" /><a href="'+url+'" title="点击查看" target="_blank"><div><h3>'+list[i].name+'</h3><p>'+desc+'</p></div></a>';
+                str+='<li><img src="./images/'+(list[i].img || 'default')+'.jpg" alt="'+list[i].name+'" /><a href="'+url+'" title="点击查看" target="_blank"><div><h3>'+list[i].name+'</h3><p>'+desc+'</p></div></a></li>';
             }else{
                 var type = list[i].type;
                 var tpl = '<i class="fa fa-link"></i>';
