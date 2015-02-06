@@ -1,0 +1,87 @@
+body,ul,h1{
+    margin:0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font:14px/1.2 "微软雅黑";
+    color: #444;
+}
+ul,ol{
+    list-style-type: none;
+    padding: 0;
+}
+.header{
+    background-color: #444;
+    height:80px;
+    line-height: 80px;
+    text-align: center; 
+    color: #fff;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    zoom:1;
+}
+.cl:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.wrapper{
+    margin:0 auto;
+}
+
+.list li{
+    padding: 5px 0;
+    text-align: center;
+}
+.list a{
+    text-decoration: none;
+    color: #444;
+}
+.list a:hover{
+    color: #333;
+}
+.playlist{
+    width:200px;
+    position: absolute;
+    top:80px;    
+    bottom: 0;
+    box-shadow: 5px 0 5px #ddd;
+    z-index:1;
+}
+.panel{
+    position: absolute;
+    right:0;
+    left:200px;
+    top:80px;
+    bottom: 0;
+}
+.loading{
+    position: absolute;    
+    top:50%;
+    margin-top: -15px;
+    height:30px;
+    line-height: 30px;
+    background-color: #ddd;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+    text-align: center;
+}
+canvas{
+    display: block;
+    width:100%;
+    height:90%;
+}
+#gain{
+    position: absolute;
+    right:0;
+}

@@ -44,14 +44,14 @@ ready(function(){
         })
     }
     function isUpdate(version){
-        var oVersion = new Date();
+        /*var oVersion = new Date();
         var sNowVersion = oVersion.getFullYear()+'-'+(oVersion.getMonth()+1)+'-'+oVersion.getDate();
         if(sNowVersion == version){
             return false
         }else{
             return true
-        }        
-        //return true
+        }  */      
+        return true
     }
     function renderPage(list,page){
         oList.style.display = 'none';
@@ -59,13 +59,20 @@ ready(function(){
         var str =''; 
         list = list.slice((page-1)*pageSize,page*pageSize);
         for(var i=0;i<list.length;i++){
-            var url = list[i].type+'/'+list[i].url+'/';
+            var url = 'demo/'+list[i].url+'/';
             if(bDemo){
                 var desc = list[i].desc.length<100?list[i].desc:list[i].desc.substring(0,100)+'...';
                 str+='<img src="./images/'+(list[i].img || 'default')+'.jpg" alt="'+list[i].name+'" /><a href="'+url+'" title="点击查看" target="_blank"><div><h3>'+list[i].name+'</h3><p>'+desc+'</p></div></a>';
             }else{
-                var type = list[i].type == 'demo' ?'fa fa-film':'fa fa-archive';
-                str += '<li><h3><a href="'+url+'" target="_blank">'+list[i].name+'</a><i class="'+type+'"></i></h3><small>'+list[i].pubdate+'</small><p>'+list[i].desc+'</p></li>';
+                var type = list[i].type;
+                var tpl = '<i class="fa fa-link"></i>';
+                if(type != 'demo'){
+                    var aType = type.split(' ');
+                    aType.forEach(function(e,i){
+                        tpl += '<i class="fa fa-'+e+'"></i>';
+                    })
+                }
+                str += '<li><h3><a href="'+url+'" target="_blank">'+list[i].name+tpl+'</a></h3><small>'+list[i].pubdate+'</small><p>'+list[i].desc+'</p></li>';
             }
         }
         if(totalPage>1){
