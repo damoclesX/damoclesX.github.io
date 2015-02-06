@@ -42,14 +42,14 @@ ready(function(){
         })
     }
     function isUpdate(version){
-        /*var oVersion = new Date();
+        var oVersion = new Date();
         var sNowVersion = oVersion.getFullYear()+'-'+(oVersion.getMonth()+1)+'-'+oVersion.getDate();
         if(sNowVersion == version){
             return false
         }else{
             return true
-        }  */      
-        return true
+        }        
+        //return true
     }
     function renderPage(list,page){
         oList.style.display = 'none';
