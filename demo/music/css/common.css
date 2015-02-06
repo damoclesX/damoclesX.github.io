@@ -76,11 +76,6 @@ ul,ol{
     box-sizing:border-box;
     text-align: center;
 }
-canvas{
-    display: block;
-    width:100%;
-    height:90%;
-}
 #gain{
     position: absolute;
     right:0;

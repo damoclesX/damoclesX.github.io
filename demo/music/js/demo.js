@@ -48,10 +48,12 @@ ready(function(){
     gainNode.connect(ac.destination);
 
     var oCvs = $('#cvs')[0];
+    oCvs.width = document.documentElement.clientWidth-210;
+    oCvs.height = document.documentElement.clientHeight-100;
     var ctx = oCvs.getContext('2d');
     var width = oCvs.clientWidth;
     var height = oCvs.clientHeight; 
-    var linear = ctx.createLinearGradient(0, 0, width, height)  ;
+    var linear = ctx.createLinearGradient(0, 0, 0, height)  ;
     linear.addColorStop(0,'red');
     linear.addColorStop(.5,'yellow');
     linear.addColorStop(1,'green');
