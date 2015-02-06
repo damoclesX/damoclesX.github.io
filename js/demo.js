@@ -1,12 +1,15 @@
 ready(function(){
-    var los = localStorage,
-        pageSize = 6,//每页数据量
+    var bDemo = location.href.split('/').pop().indexOf('demo') != -1,
+        los = localStorage,
+        pageSize = bDemo?16:6,//每页数据量
         currentPage = parseInt(location.hash.substring(1)) || 1,//当前页
         totalPage = 0,//总页数
         oLoading = $('.loading')[0],//loading
         oList = $('#list')[0],//数据列表容器
         pagination = $('#pagination')[0],//页码
         data = los._github?JSON.parse(los._github) : null;//所有数据
+
+    
 
     if(!data){
         init();
@@ -47,7 +50,8 @@ ready(function(){
             return false
         }else{
             return true
-        }
+        }        
+        //return true
     }
     function renderPage(list,page){
         oList.style.display = 'none';
@@ -55,9 +59,14 @@ ready(function(){
         var str =''; 
         list = list.slice((page-1)*pageSize,page*pageSize);
         for(var i=0;i<list.length;i++){
-            var url = list[i].type+'/'+list[i].url+'/'
-            var type = list[i].type == 'demo' ?'fa fa-film':'fa fa-archive';
-            str += '<li><h3><a href="'+url+'" target="_blank">'+list[i].name+'</a><i class="'+type+'"></i></h3><small>'+list[i].pubdate+'</small><p>'+list[i].desc+'</p></li>'
+            var url = list[i].type+'/'+list[i].url+'/';
+            if(bDemo){
+                var desc = list[i].desc.length<100?list[i].desc:list[i].desc.substring(0,100)+'...';
+                str+='<img src="./images/'+(list[i].img || 'default')+'.jpg" alt="'+list[i].name+'" /><a href="'+url+'" title="点击查看" target="_blank"><div><h3>'+list[i].name+'</h3><p>'+desc+'</p></div></a>';
+            }else{
+                var type = list[i].type == 'demo' ?'fa fa-film':'fa fa-archive';
+                str += '<li><h3><a href="'+url+'" target="_blank">'+list[i].name+'</a><i class="'+type+'"></i></h3><small>'+list[i].pubdate+'</small><p>'+list[i].desc+'</p></li>';
+            }
         }
         if(totalPage>1){
             var sPagination = '';
