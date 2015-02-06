@@ -1,0 +1,140 @@
+﻿/* ————重置样式设置默认———— */
+body,h1,h2,h3,h4,h5,p,ul,ol,dl,li,strong,span,div,select,option,form,embed,iframe{margin:0;padding:0;}
+ul,ol{list-style-type:none;}
+img{border:none;vertical-align:bottom;}
+body{background:#ddd;font:normal 100 14px Arial "黑体" "微软雅黑" "宋体";}
+a:link{color:#000;text-decoration:none;}
+a:visited{color:#000;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{color:#000;text-decoration:none;}
+/* ————原子类———— */
+.center{margin:0 auto}
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:both;overflow:hidden;}
+.w1020{width:1020px;}
+.shadow1{box-shadow:0 3px 5px #000;}
+/* ——整体框架—— */
+.contain{width:100%;}
+.header{height:409px;width:100%;background:url(../images/ui/header_bg.jpg) no-repeat center top;}
+.content{width:100%;height:1100px;background:url(../images/ui/content_bg.gif) repeat-x left top;}
+.content_inner{width:1020px;height:1100px;position:relative;top:-140px;}
+.footer{width:100%;background:url(../images/ui/footer_bg.jpg)  repeat-x left top;padding:40px 0 20px 0;}
+/* ——头部导航样式—— */
+.header_nav{height:62px;}
+.header_nav ul {padding-right:30px;}
+.header_nav ul li{float:left;padding: 0 20px;height:56px; line-height:56px;}
+.header_nav a{color:#85605E;}
+.nav_active{background:#544232;}
+.nav_active a{color:#fff;}
+/* ——底部样式—— */
+.footer ul{width:414px;font-size:12px;overflow:hidden;margin:0 auto;}
+.footer li{float:left;padding:0 10px;border-right:1px solid #000;}
+.footer p{clear:both;text-align:center;padding-top:10px;font-size:12px;}
+li.no_border{border:none;}
+/* ——content幻灯片和登陆样式—— */
+.content_inner_bannerlogin{background:url(../images/ui/banner_login.png) no-repeat;height:340px;}
+/* ——幻灯—— */
+.banner{width:670px;height:285px;overflow:hidden;margin:30px 10px 10px 30px;margin-right:0;position:relative;_display:inline;}
+.banner ul{position:absolute;left:0;top:0;height:285px;}
+.banner ul li{float:left;background:#fff;width:660px;height:275px;padding:5px;}
+.banner p{position:absolute;width:560px;height:25px;background:rgba(0,0,0,0.5);bottom:5px;left:5px;color:#fff;line-height:25px;padding-left:100px;}
+/*for IE 7 8*/
+.banner p{background:#666\o;*background:#666;}
+.banner ol{position:absolute;right:10px;bottom:10px;list-style-type:none;}
+.banner ol li{float:left;width:25px;height:15px;line-height:15px;text-align:center;margin-right:2px;font-size:12px;background:#fff;cursor:pointer;}
+
+.banner .active{color:#fff;background:rgba(0,0,0,0.5);}
+/* for IE 7,8*/
+.banner .active{background:#666\o;*background:#DDD;}
+/* ——登陆—— */
+.login{width:290px;margin:6px 10px 0 0;_display:inline;}
+/* 江湖公告 */
+.notice{width:290px;height:40px;line-height:40px;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -142px;}
+.notice strong{font-size:14px;color:#504218;padding-left:8px;}
+.notice span{font-size:12px;color:#8B8369;}
+/* 登陆界面 */
+.login_ui{background:#fff;width:278px;height:277px;border:1px solid #DBD6D0;margin-left:2px;font-size:12px;position:relative;}
+.login_ui p{margin-top:12px;border-bottom:1px solid #857D5C;overflow:hidden;padding-left:28px;height:20px;}
+.login_ui p span{width:70px;float:left;height:20px;line-height:20px;text-align:center;cursor:pointer}
+.login_active{background:url(../images/ui/login_ui.gif) repeat-x;border:1px solid #DBD6D0; border-bottom:none;}
+.login_person{margin-top:10px;}
+.login_person span{float:left;width:50px;text-align:right;line-height:26px;color:#857D5C;}
+.login_person li{margin-top:6px;*height:25px;}
+.pass{padding-left:47px;}
+#user,#password{width:133px;height:26px;line-height:26px;border:none;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat   -2px -19px;overflow:hidden;}
+#checkcode{border:none;width:68px;height:26px;padding-left:3px;background:url(../images/ui/checknode.png) no-repeat ;}
+/* for ie 6,7 */
+#user,#password,#checkcode{*background:#fff;*border:1px solid #ddd;*height:20px;*line-height:20px;}
+#gd{position:absolute;}
+#login_li{position:absolute;right:30px;top:40px;}
+#login{width:54px;height:51px;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -91px;border:none;cursor:pointer;}
+#qq_weibo_login{padding:10px 0 0 51px;overflow:hidden;}
+#qq_weibo_login a{float:left;margin-right:30px;width:70px;height:18px;display:inline;}
+#login_qq{ background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -182px;}
+#login_wei{background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -200px;}
+/* 手册 */
+.login_sidebar{margin-top:10px;border-top:1px solid #857D5C;padding:10px 0px 0 50px;}
+.login_sidebar li{margin-bottom:10px;_margin-bottom:6px;}
+.login_sidebar span{margin-left:15px;}
+/* ——content活动江湖、培训江湖、兼职江湖样式—— */
+/* 通用 */
+.content_inner_jianghu{width:717px;min-height:600px;padding-left:8px;}
+.jianghu{width:698px;height:223px;background:#FFF;margin-top:15px;border:1px solid #DAD5C8;border-radius:5px;box-shadow:0 1px 2px #000;overflow:hidden;font-size:13px;color:#643731;}
+.jianghu h2{font:normal bold 16px "宋体";color:#666;margin:10px 10px 0 10px;border-bottom:1px solid #E1E1E1;padding:0 0 5px 15px;background:url(../images/ui/h2_bg.png) no-repeat -2px 17px;}
+.jianghu a:hover{text-decoration:none;}
+.jianghu h2 span{font:normal 100 12px "微软雅黑","Times New Roman",Georgia,Serif;color:#ADA495;margin-left:5px;}
+a.more{float:right;font:normal 100 12px "微软雅黑","Times New Roman",Georgia,Serif;color:#918672;padding:15px 30px 0 0;}
+.jianghu_img{margin:10px 5px 10px 20px;_display:inline;border:1px solid #DDD;padding:5px;}
+.jianghu_img p{width:188px;font-size:12px;color:#f60;text-align:center;height:30px;line-height:30px;overflow:hidden;}
+/* 新闻列表样式 */
+.jianghu_list{width:460px;height:173px;background:#F8EACD;border:1px solid #D9B98A;border-radius:5px;margin:5px 10px 5px 0;position:relative;font-size:12px;}
+.jianghu_list ul{margin:13px 5px 5px 5px;}
+.jianghu_list ul li{width:196px;height:20px;line-height:20px;padding-left:25px;background:url(../images/ui/new.gif) no-repeat left center;overflow:hidden;position:relative;z-index:200;}
+/* 新闻简述样式 */
+.jianghu_list  div{display:none;width:218px;height:148px;overflow:hidden;background:#fff;position:absolute;right:5px;top:5px;border:1px solid #ddd; border-radius:5px;z-index:100;padding:5px;}
+a.active{display:block;width:186px;height:18px;line-height:18px;background:#FFFFFF url(../images/ui/jiao.jpg) no-repeat 5px center;border:1px solid #DDDDDD;border-radius:5px 0 0 5px;padding-left:15px;}
+#test{width:116px; height:29px; background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -277px;float:right;margin:-30px 200px 0 0;display:inline;}
+/* ——兼职江湖样式—— */
+.jianghu_parttime{position:relative;overflow:hidden;}
+/* 搜索 */
+.parttime_search{width:206px;height:180px;border-right:1px dashed #E1E1E1;margin:10px 0;}
+.parttime_search h3{text-align:center;margin-top:-10px;padding:5px 0;}
+.parttime_search li{margin-bottom:6px;}
+.parttime_search span{margin-left:15px;font-weight:bold;color:#4E4015}
+.parttime_search input{margin-left:80px;border:none;width:76px;height:29px;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -248px;cursor:pointer;}
+.parttime_search select{border:none;width:107px;height:19px;line-height:19px;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -72px;}
+.parttime_search select{*background:#fff;*border:1px solid #ddd;*height:20px;*line-height:20px;}
+/* 兼职列表*/
+.parttime_list{width:279px;height:180px;font-size:12px;border-right:1px dashed #E1E1E1;position:relative;margin:10px 0;overflow:hidden;}
+.parttime_list ul{width:260px;position:absolute;left:0;top:0;}
+.parttime_list li{overflow:hidden;padding:1px 0;height:18px;line-height:18px;}
+.parttime_list li a{float:left;padding-left:15px;background:url(../images/ui/part_time_point.png) no-repeat left center;}
+.parttime_list li span{float:right;}
+.parttime_list_contain{width:260px;height:140px;overflow:hidden;position:relative;left:10px;top:18px;}
+.wanted{color:red;}
+.parttime_list em{display:block;width:48px;height:25px;position:absolute;cursor:pointer;}
+#next{background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -331px;left:100px;bottom:0px;z-index:100;}
+#prev{background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 2px -306px;left:100px;top:-4px;z-index:100;}
+/* 兼职图片 */
+.parttime_img{width:207px;height:200px;background:url(../images/ui/parttime_img.gif) 8px top no-repeat;}
+.parttime_img img{display:block;margin:26px 0 0 22px;}
+/* ——content视频、幻灯、微博样式—— */
+.content_inner_media{width:295px;}
+.media{width:290px;height:223px;margin-top:15px;border:1px solid #DAD5C8;border-radius:5px;box-shadow:0 1px 2px #000;overflow:hidden;font-size:13px;color:#643731;position:relative;}
+/* 视频 */
+.media embed{margin:15px 5px 5px 5px;padding:5px;background:#918672;}
+/* 图片 */
+.media_pics_contain{width:276px;height:181px;overflow:hidden;margin:10px auto;position:relative;}
+.media_pics_contain ul li{width:276px;height:181px;position:absolute;left:0;top:0;opacity:0.4;filter:alpha(opacity=40);}
+.media_pics_contain ul li img{width:276px;height:181px;}
+.media_pics ol{position:absolute;bottom:10px;right:107px;list-style:none;}
+.media_pics ol li{width:10px;height:10px;float:left;margin-left:10px;background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px -10px;display:inline;cursor:pointer;overflow:hidden;}
+.media_pics ol li.active{background:url(../images/ui/W3Cfuns_allbgs.png) no-repeat 0px 0px;}
+/* 微博窗口 */
+.media_weibo h2{height:44px;background:url(../images/ui/weibo.jpg) no-repeat;margin-left:10px;margin-top:-1px;}
+.media_weibo .more{position:absolute;right:-5px;}
+.media_weibo iframe{position:relative;left:10px;top:-8px;}
+/* 广告样式（底部大图） */
+.content_inner_ad{width:1014px;padding-top:20px;}
+.content_inner_ad img{padding:1px;border:1px solid #ddd;border-radius:5px;}

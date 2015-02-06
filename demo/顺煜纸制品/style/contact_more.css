@@ -1,0 +1,17 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.contact{
+	width:889px;
+	margin-left:5px;
+	border-right:1px #458000 solid;
+	background:url(../images/contactbg.jpg);
+	font-family:Arial, Helvetica, sans-serif;font-size:16px;
+	}
+.headline{
+	width:200px;
+	}
+.big_word{
+	margin-left:10px;
+	}
+.contact p{
+	margin-left:10px;}

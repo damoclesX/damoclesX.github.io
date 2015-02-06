@@ -1,0 +1,25 @@
+﻿.toppic{width:889px;height:110px;background:#060;margin-left:5px;}
+.production{
+	width:889px;
+	margin:5px 0 0 5px;
+	background:#fff;
+	border-right:#060 solid 1px;
+	 }
+.business{
+	width:889px;
+	margin:5px 0 0 5px;
+	background:#fff;
+	border-right:#060 solid 1px;
+	 }
+.development{
+	width:889px;
+	margin:5px 0 0 5px;
+	background:#fff;
+	border-right:#060 solid 1px;
+	 }
+.headline{width:250px;}
+.development .headline{
+	width:300px;
+	}
+.big_word{
+	margin-left:20px;}

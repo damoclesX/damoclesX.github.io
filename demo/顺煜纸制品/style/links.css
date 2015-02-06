@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.lin{
+	width:890px;
+	height:110px;
+	margin-left:5px;
+	background:url(../images/linbg.jpg);}
+.contact{
+	height:450px;
+	width:889px;
+	margin-left:5px;
+	border-right:1px #458000 solid;
+	font-family:Arial, Helvetica, sans-serif;font-size:16px;
+	}
+h1{width:150px;}
+h2{font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#360;}
+a.otherlink:link{color:#039;text-decoration:none;}
+a.otherlink:visited{color:#030303;text-decoration:none;}
+a.otherlink:hover{text-decoration:underline;}
+a.otherlink:active{color:#030303;}

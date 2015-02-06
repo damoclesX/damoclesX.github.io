@@ -1,0 +1,65 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+.box {
+	width:1083px;
+	margin:0 auto;
+	position:relative;
+}
+
+#top, #nav {
+	position:fixed;
+	z-index:100;
+}
+
+#top {
+	width:1083px;
+	height:30px;
+}
+#top a{
+	float:right;}
+.left {
+	width:188px;
+	min-height:900px;
+	float:left;
+	position:fixd;
+	overflow:hidden;
+}
+.left ul{
+	margin-top:50px;
+	margin-left:10px;}
+.left li{
+	width:178px;
+	height:50px;
+	line-height:50px;
+
+	}
+.current_nav{
+	display:block;
+	width:178px;
+	height:50px;}
+.right {
+	width:895px;
+	float:right;
+	position:relative;
+	overflow:hidden;
+}
+
+.banner { padding:5px 2px 0 5px; }
+
+
+.footer {
+	clear:both;
+	width: 894px;
+}
+
+.footer ul {
+	width:400px;
+	margin:0 auto;
+}
+
+.footer ul li {
+	float:left;
+	margin-left:10px;
+	height:30px;
+}

@@ -1,0 +1,331 @@
+﻿.header{
+	background:url(../image/header_bg.jpg) no-repeat center top;
+	height:508px;
+	position:relative;
+}
+.header .header_menubar a{
+	color:#b60067;
+}
+.header_menubar ul li{
+	float:left;
+}
+.header_menubar ul li a{
+	margin-left:10px;
+}
+.header_search{
+	height:40px;
+	background:url(../image/nav_bg.jpg) no-repeat center top;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.header_search p,.header_search div{
+	font-size:16px;
+	text-align:left;
+}
+#search_text{
+	width:200px;
+	height:20px;
+}
+#search_submit{
+	border:1px solid #b60067;
+	width:80px;
+	height:25px;
+}
+/* ————————————————————————————————————主体部分—————————————————————————— */
+/* ———————————— ——所有商品分类—— ————— */
+.body{
+	position:relative;
+}
+.body_classify ul li a{
+	color:#b60067 !important;
+}
+.body_classify a:hover{
+	text-decoration:none;
+}
+.body_classify ul{
+	width:246px;
+	border:2px solid #b60067;
+	border-top:none;
+	background:url(../image/classify_bg.jpg) no-repeat 32px top;
+}
+.body_classify ul li{
+	height:38px;
+	line-height:40px;
+	font-size:16px;
+	text-align:center;
+	border-bottom:1px solid #b60067;
+	background:url(../image/narrow.jpg) no-repeat 200px top;
+}
+.body_classify ul li:hover{
+	background:#ddd;
+}
+.body_classify_list{
+	width:285px;
+	background:#b60067;
+	position:absolute;
+	left:250px;
+	padding:10px;
+	z-index:100;
+	display:none;
+}
+.body_classify_lists{
+	display:none;
+}
+.body_classify_list strong{
+	color:#ddd;
+	font-size:16px;
+}
+.body_classify_list li{
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px dotted #ddd;
+}
+.body_classify_list a{
+	color:#ddd;
+}
+/* ——————————快捷通道、公告、登陆—————— —————————— */
+.body_fast_nav{
+	overflow:hidden;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+}
+.body_fast_nav ul{
+	overflow:hidden;
+	margin-left:3px;
+	background:#D45D9F;
+}
+.body_fast_nav ul li{
+	float:left;
+	width:100px;
+	text-align:center;
+	border-right:1px solid #fff;
+	background:#D45D9F;
+}
+.body_fast_nav ul li.body_fast_now{
+	background:#9F0158;
+}
+/*————— ————————快捷通道结束————— ————————*/
+.body_fast_banner_img{
+	height:300px;
+	background:#fff;
+	position:relative;
+	overflow:hidden;
+}
+.banner_img{
+	margin:5px;
+	width:443px;
+	height:283px;
+	border:1px solid #cca6bd;
+	overflow:hidden;
+	position:relative;
+}
+.banner_img_list{
+	position:absolute;
+	height:283px;
+	width:1772px;
+	overflow:hidden;
+}
+.banner_img_list li{
+	float:left;
+}
+.banner_num{
+	position:absolute;
+	right:6px;
+	bottom:11px;
+}
+.banner_num li{
+	float:left;
+	width:19px;
+	height:20px;
+	margin-right:1px;
+	line-height:18px;
+	text-align:center;
+	display:inline;
+	background:#9F0158;
+	border:1px solid #fff;
+	color:#fff;
+}
+.banner_num li.banner_num_now{
+	background:#D45D9F;
+}
+/*————— ————————焦点图结束————— ————————*/
+.body_fast_banner_login_regedit{
+	height:50px;
+	background:url(../image/login.jpg) no-repeat center top;
+	position:relative;
+}
+#login{
+	position:absolute;
+	left:30px;
+	top:8px;
+	font-size:25px;
+}
+#login a,#regedit a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+#regedit{
+	position:absolute;
+	left:130px;
+	top:8px;
+	font-size:25px;
+}
+/*————— ————————登陆注册结束————— ————————*/
+.body_fast_banner_login_notice{
+	border:1px solid #CCA6BD;
+	border-top:none;
+	overflow:hidden;
+	height:230px;
+}
+.tab_notice{
+	display:none;
+}
+.tab_notice_n{
+	display:block;
+}
+.body_fast_banner_login_notice p{
+	padding:10px;
+	text-indent:2em;
+	font-size:12px;
+}
+.body_fast_banner_login_notice_nav{
+	background:#DCCBD5;
+	height:30px;
+	overflow:hidden;
+}
+.body_fast_banner_login_notice_nav li{
+	float:left;
+	line-height:30px;
+	text-align:center;
+}
+.body_fast_banner_login_notice_nav li a{
+	margin-left:5px;
+	padding:0 10px 10px 10px;
+}
+.notice_now{
+	background:#fff;
+}
+/*————— ————————公告栏结束————— ————————*/
+.separate{
+	background:url(../image/separate.jpg) no-repeat center 12px;
+}
+/*——————分栏条纹结束——————*/
+.mark{
+	display:block;
+	height:31px;
+	font-size:16px;
+	padding:10px 0 0 30px;
+}
+.new_mark{
+	background:url(../image/new.jpg) no-repeat left top;
+}
+.hot_mark{
+	background:url(../image/hot.jpg) no-repeat left top;
+}
+.normal_mark{
+	background:url(../image/mark.jpg) no-repeat left top;
+}
+/*——————栏目名称结束——————*/
+.more{
+	margin-right:40px;
+	display:inline;
+}
+/*——————查看更多结束——————*/
+.narrow{
+	width:80px;
+	margin-top:60px;
+}
+/*——————可滚动查看的箭头结束——————*/
+.products{
+	height:200px;
+	width:800px;
+	overflow:hidden;
+	position:relative;
+}
+.products_list{
+	height:200px;
+	width:1600px;
+	position:absolute;
+}
+.products_list li{
+	float:left;
+}
+/* ——————————可以滚动查看的商品结束———————— */
+.other_products,.body_help,.body_flinks{
+	padding:10px;
+	width:938px;
+	border:1px solid #ddd;
+	overflow:hidden;
+}
+.big,.news_list{
+	width:338px;
+}
+.big_list,.news{
+	width:600px;
+	overflow:hidden;
+}
+.news li,.big_list li{
+	float:left;
+	width:200px;
+	height:240px;
+	text-align:center;
+}
+.body_help,.body_flinks{
+	background:#FAFAFA;
+}
+.body_flinks{
+	_height:100px;
+	min-height:100px;
+}
+.help_name{
+	font-size:16px;
+	font-weight:bold;
+}
+.help_name span{
+	margin-right:5px;
+}
+.help_list{
+	margin:5px 0 0 40px;
+	list-style-type:disc;
+	font-size:12px;
+}
+#backtop{
+	position:fixed;
+	bottom:10%;
+	right:10%;
+	display:none;
+	cursor:pointer;
+}
+/* ——————————————————————底部———————————————————————— */
+.footer{
+	overflow:hidden;
+	background:url(../image/nav_bg.jpg) no-repeat left top;
+	padding-bottom:30px;
+}
+.footer_in_nav{
+	overflow:hidden;
+	font-weight:bold;
+	width:500px;
+	margin:10px auto;	
+}
+.footer_in_nav li{
+	float:left;
+	width:86px;
+	text-align:center;
+	line-height:25px;
+	font-size:14px;
+	color:#fff;
+	padding-right:10px;
+	border-right:2px solid #fff;
+}
+.footer_in_nav li a{
+	color:#fff;
+}
+.footer_in p{
+	text-align:center;
+	margin-top:3px;
+	font-size:12px;
+}

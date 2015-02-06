@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.caption{
+	width:885px;
+	height:250px;
+	margin:0 5px 5px 5px;
+	}
+.description{
+	width:550px;
+	margin:5px;
+	float:left;
+	display:inline;
+	background:#fff;}
+.map{
+	width:335px;
+	height:450px;
+	float:right;
+	margin:50px 0;
+	background:#999;
+	}
+.pattern_of_enterprises{
+	clear:both;
+	width:885px;
+	margin:5px 5px 0 5px ;
+	background:#FFF;
+	border-right:#060 solid 1px;
+	overflow:hidden;
+	}
+.pattern_of_enterprises .word{
+	float:left;
+	display:inline;
+	margin:10px;
+	width:150px;}
+.headline{
+	width:200px;
+	}
+.big_word{
+	margin-left:30px;}
+.pattern_of_enterprises .headline{
+	width:300px;
+	}

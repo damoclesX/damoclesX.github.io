@@ -1,0 +1,105 @@
+﻿body,div,ul,li,h1,h2,h3,h4,h5,p,form,input,strong{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type:none;
+}
+img{
+	border:none;
+	vertical-align:middle;
+}
+body{
+	font:normal 14px "微软雅黑" "宋体";
+	font-size:14px;
+}
+a:link{
+	color:#000;
+	text-decoration:none;
+}
+a:visited{
+	color:#000;
+	text-decoration:none;
+}
+a:hover{
+	color:#b60067;
+	text-decoration:underline;
+}
+a:active{
+	color:#000;
+	text-decoration:none;
+}
+/* ——————————————————————————————原子类 ————————————————————————————————*/
+.w100b{
+	width:100%;
+	overflow:hidden;
+}
+.w960{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.w300{
+	width:300px;
+}
+.w360{
+	width:360px;
+}
+.w250{
+	width:250px;
+}
+.w710{
+	width:710px;
+}
+.w455{
+	width:455px;
+}
+.w255{
+	width:255px;
+}
+.w186{
+	width:186px;
+	min-height:100px;
+}
+.mt10{
+	margin-top:10px;
+}
+.mt40{
+	margin-top:40px;
+}
+.ml20{
+	margin-left:20px;
+}
+.p10{
+	padding:10px;
+}
+.pl20{
+	padding-left:20px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.lh40{
+	line-height:40px;
+}
+.color_b6{
+	color:#b60067
+}
+.color_ff{
+	color:#fff;
+}
+.color_97{
+	color:#979797;
+}
+.ft12{
+	font-size:12px;
+}
+.nbd{
+	border:none !important;
+}

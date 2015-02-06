@@ -1,0 +1,31 @@
+﻿.cooperation_pic{
+	width:890px;
+	height:250px;
+	margin-left:5px;
+	background:#458000;
+	}
+.center_cooperation_left{
+	width:205px;
+	height:250px;
+	background:#458000;
+	margin:5px;
+	float:left;
+	display:inline;
+	}
+.center_cooperation_right{
+	width:679px;
+	height:500px;
+	float:right;
+	overflow:hidden;
+	margin:5px 0;
+	background:#fff;
+	border-right:#060 solid 1px;
+	}
+.headline{width:350px;}
+.center_cooperation_right p a{
+	display:block;
+	margin-top:10px;
+	color:#888 !important;}
+.center_cooperation_right p a:hover{
+	color:#458000 !important;}
+	

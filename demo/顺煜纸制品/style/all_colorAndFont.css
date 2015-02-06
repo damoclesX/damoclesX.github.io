@@ -1,0 +1,65 @@
+﻿@charset "utf-8";
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.left { background:url(../images/left_bg.jpg) repeat-y; }
+.left li{
+		text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;}
+
+.current_nav{
+	background:#fff ;
+	color:#458000;
+	}
+.current_nav a:link{
+color:#458000 !important;
+text-decoration:none;}
+.current_nav a:visited{
+	color:#458000;
+	}
+.current_nav a:hover{
+text-decoration:underline;}
+
+.current_nav a:active{
+color:#458000;}
+#top { background:url(../images/hui.jpg) repeat-x; 
+      border-bottom:#690 solid 5px;
+	  border-right:#060 solid 1px;}
+.right ul li { line-height:20px; }
+.headline{
+	font-size:24px;
+	color:#666;
+	border-bottom:2px solid #360;
+	text-align:center;}
+.word{font-family:Arial, Helvetica, sans-serif;font-size:16px;text-indent:20px;
+	padding:5px 0 5px 5px;}
+.big_word{
+	font-family:Arial, Helvetica, sans-serif;font-size:20px;color:#458000;}
+.date{
+	color:#777;
+	font-style:italic;
+	font-size:13px;
+	margin-left:10px;
+	}
+.footer {
+	clear:both;
+	background-color:#C0C0C0;
+	border-top:#690 solid 10px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	border-right:#060 solid 1px;
+}
+
+.footer ul li {
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+	font-size:18px;
+	font-weight:lighter;
+
+}
+
+.footer p { clear:left; }
+
+.mlink { color:#fff; }

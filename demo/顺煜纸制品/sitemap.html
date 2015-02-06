@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Site map</title>
+<link  rel="stylesheet" type="text/css" href="style/reset.css" />
+<link  rel="stylesheet" type="text/css" href="style/all_colorAndFont.css" />
+<link  rel="stylesheet" type="text/css" href="style/all_layout.css" />
+<link  rel="stylesheet" type="text/css" href="style/sitemap_more.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var height=$('.right').height();
+		$('.left').css('height', height);
+		});
+</script>
+<script type="text/javascript">
+function addBookmark(title,url) {
+		 if (window.sidebar) {
+ 			window.sidebar.addPanel(title,url,"");
+ 			}
+		 else if( document.all ) {
+ 			window.external.AddFavorite(url,title);
+ 			} 
+		else if( window.opera && window.print ) {
+			  alert('Join the favorites failure, please press the Alt + D to add');
+			}
+ 		}
+</script>
+</head>
+
+<body>
+<div class="box">
+  <div id="top"><a href="#" onclick="addBookmark('Zhongshan Sanxiang Shunyu Paper Products Company homePage','http://www.域名.com')"><img src="images/a2f.jpg" alt=""/></a> <a href="#"><img src="images/msn.jpg" /></a> </div>
+  <!--顶部灰色条结束-->
+  <div class="left" id="nav"><img src="images/logo.jpg" width="170px" height="130px" alt="logo" />
+    <ul>
+      <li class="current_nav"><a href="index.html" >Home</a></li>
+      <li><a href="about.html" >About us</a></li>
+      <li><a href="contact.html" >Contact us</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="cooperation.html" >Cooperation</a></li>
+      <li><a href="support.html" >Support</a></li>
+    </ul>
+  </div>
+  <!--左边（导航条）结束-->
+  <div class="right">
+    <div class="banner"><img src="images/banner.jpg"  width="885px" height="130px" alt="banner"/></div>
+    <!--右边顶部banner结束-->
+    <div class="top">
+      <div class="site"> </div>
+    </div>
+    <!--右边中间site图片结束-->
+    <div class="center">
+      <ul>
+        <li><a href="index.html" >Home</a> 
+                  <ul>
+            <li><a href="#">welcome</a></li>
+            <li><a href="#">Company Brief Introduction</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+          </li>
+        <li><a href="about.html" >About us</a>
+          <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Organization&nbsp;Chart</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" >Products</a>
+          <ul>
+            <li><a href="#">New products</a></li>
+            <li><a href="#">Major products</a></li>
+            <li><a href="#">Product craftwork</a></li>
+          </ul>
+        </li>
+       <li><a href="product.html">Cooperation</a>
+                 <ul>
+            <li><a href="#">Business cooperation</a></li>
+            <li><a href="#">Job offer</a></li>
+            <li><a href="#">Other areas</a></li>
+          </ul>
+       </li> 
+        <li><a href="cooperation.html" >Support</a>
+          <ul>
+            <li><a href="#">Production Division</a></li>
+            <li><a href="#">Business Division</a></li>
+            <li><a href="#">Development Division</a></li>
+          </ul>
+        </li>
+        <li><a href="support.html" >contact us</a>
+                  <ul>
+            <li><a href="#">Adress</a></li>
+            <li><a href="#">General manager : Andy Xu</a></li>
+            <li><a href="#">Business/production : Ms. Shen</a></li>
+             <li><a href="#">Development : Mr. Yang</a></li>
+             <li><a href="#">Postalcode</a></li>
+             
+          </ul>
+                  
+        </li>
+         <li><a href="support.html" >Imprint</a>
+                          <ul>
+            <li><a href="#">Website ownership</a></li>
+            <li><a href="#">Terms of use</a></li>
+            
+          </ul></li>
+         <li><a href="support.html" >Site map</a></li>
+         <li><a href="support.html" >Links</a></li>
+      </ul>
+    </div>
+	<br />
+    <!--链接结束-->
+    <div class="footer">
+      <ul>
+        <li><a target="_parent" href="index.html">Home </a>|</li>
+        <li><a target="_parent" href="contact.html">Contact us</a>|</li>
+        <li><a target="_parent" href="imprint.html">Imprint</a> |</li>
+        <li><a target="_parent" href="sitemap.html">site map</a>| </li>
+        <li><a target="_parent" href="links.html">Links</a></li>
+      </ul>
+      <p class="mlink">Copyright&copy; Shunyu Company 2012   >>More sites about us<img src="images/mlink.jpg" alt="for more sites about us" title="for more sites about us"  width="60px" height="39px"/></p>
+    </div>
+    <!--右边底部版权结束--> 
+  </div>
+  <!--右边结束--> 
+</div>
+<!--整体box结束-->
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.im{
+	width:890px;
+	height:110px;
+	margin-left:5px;
+	background:url(../images/imbg.jpg);}
+.contact{
+	width:889px;
+	margin-left:5px;
+	border-right:1px #458000 solid;
+	font-family:Arial, Helvetica, sans-serif;font-size:16px;
+	}
+.headline{
+	width:200px;}
