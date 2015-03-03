@@ -1,0 +1,130 @@
+﻿body,div,img,ul,li,p,h1,strong{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type:none;
+}
+li{
+	text-align:center;
+	margin-top:10px;
+	overflow:hidden
+}
+body{
+	width:100%;
+	background:url(../image/index_bg.png) left top repeat;
+	font:"微软雅黑" "宋体";
+}
+img{
+	border:none;
+	vertical-align:top;	
+}
+.content img{
+	cursor:move;
+}
+h1{
+	text-align:center;
+	font-size:18px;
+	padding:5px;
+	font-weight:bold;
+}
+a{
+	text-decoration:none;
+	color:#222;
+}
+/* ————————————————————————————原子类—————————————————————————————————————— */
+.w960{
+	width:960px;
+	overfow:hidden;
+}
+.w600{
+	width:600px;
+	overflow:hidden;
+	position:relative;
+}
+.w360{
+	width:360px;
+	overflow:hidden;
+}
+.h600{
+	height:600px; 
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.mt10{
+	margin-top:10px;
+}
+.ml10{
+	margin-left:10px;
+}
+.ta{
+	text-align:center;
+}
+/*—————————————————————————————— 独特的类 ————————————————————————————————————*/
+.contain{
+	margin:10px auto;
+}
+.content{
+	background:url(../image/content_bg.jpg) left top no-repeat;
+	position:relative;
+}
+.sidebar{
+	background:url(../image/sidebar_bg.jpg) left top no-repeat;
+	position:relative;
+}
+#items,#time{
+	margin:0 10px 0 10px;
+}
+.time{
+	text-align:center;
+	font:normal bold 20px "微软雅黑";
+}
+.position{
+	position:absolute;
+}
+#mask{
+	position:absolute;
+	left:-300px;
+	top:-300px;
+	width:1200px;
+	height:1200px;
+/* 	background:url(../image/mask_bg.jpg) left top repeat; */
+	display:none;
+}
+#maskIn{
+	width:600px;
+	height:359px;
+	margin:500px 300px 0 300px;
+}
+.lose{
+	background:url(../image/loseIt.png) center top no-repeat;
+}
+.win{
+	background:url(../image/getIt.png) center top no-repeat;
+}
+#item{
+	padding:5px;
+	background:url(../image/img_bg.jpg) left top repeat;
+}
+.copyright{
+	font-size:12px;
+	position:absolute;
+	bottom:5px;
+	right:10px;
+	color:#666;
+}
+#tips{
+	width:200px;
+	height:400px;
+	background:url(../image/tip.png) left top no-repeat;
+	position:absolute;
+	left:20px;
+	top:100px;
+	z-index:200;
+	clip:rect(0px,200px,50px,0px);
+	cursor:help;
+}

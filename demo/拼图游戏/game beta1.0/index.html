@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>拼图小游戏</title>
+	<meta  name="description" content="一个html制作的拼图游戏，花费两天时间制作，代码拙劣请勿见怪！"/>
+	<meta name="keywords" content="html拼图游戏,海贼王,王健,damocles" />
+	<meta name="author" content="王健(damocles)"/>
+	<!--[if lt IE 9]> <script type="text/javascript" src="js/ie.js"></script> <![endif]-->
+	<link rel="stylesheet" type="text/css" href="style/reset.css" media="all" />	
+	<script type="text/javascript" src="js/event.js"></script>
+	<script type="text/javascript" src="js/getElementsByClassName.js"></script>	
+	<script type="text/javascript" src="js/drag.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<div class="contain w960">
+		<div class="content w600 h600 fl" id="content">
+			<img src="image/item/item1_1.jpg" alt="" id="position1" class="position" />
+			<img src="image/item/item1_2.jpg" alt=""  id="position2" class="position" />
+			<img src="image/item/item1_3.jpg" alt=""  id="position3" class="position"/>
+			<img src="image/item/item1_4.jpg" alt=""  id="position4" class="position"/>
+			<img src="image/item/item1_5.jpg" alt=""  id="position5" class="position"/>
+			<img src="image/item/item1_6.jpg" alt=""  id="position6" class="position"/>
+			<img src="image/item/item1_7.jpg" alt=""  id="position7" class="position"/>
+			<img src="image/item/item1_8.jpg" alt=""  id="position8" class="position"/>
+			<img src="image/item/item1_9.jpg" alt=""  id="position9" class="position"/>
+			<div id="mask"></div>
+		</div>
+		<div class="sidebar w360 h600 fr">
+			<ul>
+				<li>
+					<h1><img src="image/final.jpg" alt="最终效果图" /></h1>
+					<img src="image/item/item1.jpg" alt="" id="item" />
+				</li>
+				<li>
+					<h1>请选择一张图片及游戏难度：</h1>
+					<select name="items" id="items">
+						<option value="5">蒙奇·D·路飞①</option>
+						<option value="8">蒙奇·D·路飞②</option>
+						<option value="1">罗罗亚索隆</option>					
+						<option value="3">托尼托尼·乔巴</option>
+						<option value="4">香吉士</option>
+						<option value="6">妮可·罗宾</option>
+						<option value="9">索隆和香吉士</option>
+						<option value="2">草帽海贼团①</option>
+						<option value="7">草帽海贼团②</option>
+					</select>
+					<select name="time" id="time">
+						<option value="60">初级</option>
+						<option value="45">中级</option>
+						<option value="30">高级</option>
+					</select>					
+				</li>
+				<li>
+					<form action="#">
+						<input type="button" value="开始游戏" id="start" />
+						<input type="button" value="刷新位置" id="refresh" />
+						<input type="button" value="重新选择" id="restart" />
+					</form>
+				</li>
+				<li>
+					<h1>剩余时间：</h1>
+					<p class="time"><span id="minutes" >00</span>：<span id="second">00</span></p>
+				</li>
+			</ul>
+			<p class="copyright">
+			<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff128a0759574e06871dea00f36e3a0d3' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+			湘潭大学电子商务一班<a href="http://n8506.com">王健</a>&copy;2013版权所有</p>
+		</div>		
+	</div>
+	<div id="tips"></div>
+</body>
+</html>

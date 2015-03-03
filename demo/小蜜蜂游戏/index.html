@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,ul,li,h5,p{margin: 0;padding: 0;list-style-type: none;}
+		body{font-family: "微软雅黑";}
+		#game{width:960px;height:600px;margin: 10px auto;background: #000;position: relative;}
+		a{text-decoration: none;display: block;width:200px;height:30px;line-height: 30px;color: #000;text-align: center;font-size: 16px;background: #fff;opacity: .8;border-radius: 10px;position: absolute;transition:all 1s;left: 380px;top:285px;}
+		a:hover{background: #ddd;color: #555;}
+		#tips{color: #fff;width:200px;font-size: 13px;position: absolute;left:380px;top:200px;}
+		#score{color: #fff;text-align: left;padding: 10px;}
+		#score span{color: #ff5400;}
+		.enemy{width:400px;height:168px;position: absolute;left:280px;top:30px;}
+		.enemy li{float: left;width:40px;height:28px;}
+		.aircraft{width:46px;height:60px;background: url(images/fj.png);position: absolute;bottom: 0;left:457px;}
+		.bullet{width:2px;height:10px;background: #fff;position: absolute;box-shadow: 0 0 3px #ff5400;}
+		.mf1{width:40px;height:28px;background: url(images/mf1.png);}
+		.mf2{width:40px;height:28px;background: url(images/mf2.png);}
+		.mf3{width:40px;height:28px;background: url(images/mf3.png);}
+	</style>
+</head>
+<body>
+	<div id="game">
+		<div id="tips">
+			<h5>游戏说明:</h5>
+			<p>A控制战斗机向左（←）移动<br>D控制战斗机向右（→）移动<br>空格发射子弹</p>
+		</div>
+		<a href="javascript:;" id="gameBtn">开始游戏</a>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>

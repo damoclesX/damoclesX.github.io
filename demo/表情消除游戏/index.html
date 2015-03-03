@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body,h1,p{margin: 0;padding: 0;}
+		body{font-family: "微软雅黑";background: #666;}
+		.box{width: 900px;margin:20px auto;height:500px;position: relative;background: #ddd;left:0;top:0;box-shadow: 0 3px 3px #000;}
+		.tips{width: 100%;height:50px;text-align: center;}
+		.tips h1{font-size: 16px;padding: 15px 0;}
+		.tips p{font-size: 12px;padding: 0 0 15px;}
+		.tips input{width: 150px;height:30px;}
+		.score{position: absolute;width: 100px;height:50px;background: #ff5400;left: -100px;top:135px;color: #fff;box-shadow: 0 3px 3px #000;border-radius: 10px 0 0 10px}
+		.score p{width: 100%;height: 100%;line-height: 50px;text-align: center;}
+		.stage{position: absolute;width: 890px;height: 360px;background: #fff;top:135px;left: 5px;overflow: hidden;box-shadow:inset 0 0 10px #000;}
+		.stage div{position: absolute;right:0;top:0;width:60px;height:33px;background:no-repeat center center;cursor: pointer;}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="tips">
+			<h1>你的鼠标点击速度有多快?</h1>
+			<p>游戏说明：点击“开始游戏”，随机掉下表情，点中它，千万别让它掉下去！！</p>
+			<input type="button" value="开始游戏" id="btn">
+		</div>
+		<div class="score">
+			<p>得分：<span id="get">0</span></p>
+		</div>
+		<div class="stage" id="stage">
+		</div>
+	</div>
+	<script src="js/base.js"></script>
+</body>
+</html>
