@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(bg.jpg) center center no-repeat;
+        }
+        #app{
+            margin-top: 10px;
+        }
+        .chess-col{
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+        .chess-col:after{
+            content:"";
+            display: table-row;
+            clear:both;
+        }
+        .chess-row{
+            width: 60px;
+            height: 60px;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+        .chess-row:before{
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: #fff;
+            overflow: hidden;
+            position: relative;
+            top:30px;
+        }
+        .chess-row:after{
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: #fff;
+            overflow: hidden;
+            transform:rotate(-270deg) translateX(45%);
+        }
+        .chess{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: #fff url(1.png) center center no-repeat;
+            background-size: contain;
+            border-radius: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -25px;
+            margin-top: -25px;
+            z-index: 1;
+            box-shadow:  0 0 3px #000 ;
+        }
+        .chess-other{
+            background: #fff url(2.png) center center no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="chess-col" v-for="i in boardWidth">
+            <div class="chess-row" v-for="j in boardWidth" @click="addChess(j, i, $event)">
+            </div>
+        </div>
+    </div>
+    <audio src="1.mp3" id="mp3"></audio>
+    <script src="vue.js"></script>
+    <script>
+        //棋盘
+        var oMp3 = document.getElementById('mp3');
+        new Vue({
+            el: '#app',
+            data:{
+                boardWidth: 15,
+                //区分两个人
+                you: true,
+                //棋子位置记录
+                chessMap: {},
+                //我的棋子位置数据
+                youData: {},
+                //他的棋子数据
+                otherData: {},
+                //游戏是否结束
+                gameover: false
+            },
+            computed: {
+                limit: function(){
+                    return this.boardWidth + 1
+                }
+            },
+            methods:{
+                addChess: function(x, y, e){
+                    //游戏结束了，是否再来一次
+                    if(this.gameover){
+                        if(confirm('再来一次?')){
+                            return location.reload()
+                        }
+                    };
+                    //已经放了棋子
+                    if(this.chessMap[x+'_'+y]) return;
+                    this.chessMap[x+'_'+y] = true;
+                    var target = e.target;
+                    //你在下
+                    if(this.you){
+                        target.innerHTML = '<div class="chess" title="'+x+'-'+y+'"></div>';
+                        this.youData[x+'_'+y] = true;
+                    //他在下
+                    }else{
+                        target.innerHTML = '<div class="chess chess-other" title="'+x+'-'+y+'"></div>';
+                        this.otherData[x+'_'+y] = true;
+                    }
+                    //播放棋子放下的声音
+                    oMp3.play();
+                    //检查是否完成游戏
+                    this.check(x, y);
+                },
+                check: function(x, y){
+                    if(this.checkVertical(x, y) || this.checkHorizontal(x, y) || this.checkOblique(x, y)){
+                        alert(this.you ? '你赢得了游戏' : '对方赢得了游戏');
+                        this.gameover = true;
+                    }else{
+                        this.you = !this.you;
+                    };
+                },
+                //检查垂直方向
+                checkVertical: function(x, y){
+                    var res = [];
+                    for(var i = y-5, j = y+5; i<j; i++){
+                        if(i > 0 && i < this.limit){
+                            res.push(x + '_' + i)
+                        }
+                    }                    
+                    return this.validData(this.sliceData(res));
+                },
+                //检查水平方向
+                checkHorizontal: function(x, y){
+                    var res = [];
+                    for(var i = x-5, j = x+5; i<j; i++){
+                        if(i > 0 && i < this.limit){
+                            res.push(i + '_' + y)
+                        }
+                    }
+                    return this.validData(this.sliceData(res));
+                },
+                //检查斜向
+                checkOblique: function(x, y){
+                    //左上到右下方向
+                    var res1 = [];
+                    //左下到右上方向
+                    var res2 = [];
+                    var space = x - y;
+                    var total = x + y;
+
+                    for(var i = x - 5, j = x + 5; i < j ; i++){
+                        
+                        if( i > 0 && i < this.limit &&  i - space > 0 && i - space < this.limit){
+                            res1.push(i +'_' + (i - space))
+                            res2.push(i +'_' + (total - i))
+                        }
+                    }
+                    return this.validData(this.sliceData(res1)) || this.validData(this.sliceData(res2));
+                },
+                //切割数据
+                sliceData: function(data){
+                    var res = [];
+                    //按5个分割数据
+                    for(var i = 0, l = data.length; i < l ; i++){
+                        res.push(data.slice(i, 5+i))
+                    }
+                    //过滤不符合5个组合的可能
+                    return res.filter(function(e){
+                        return e.length == 5;
+                        
+                    })
+                },
+                //验证数据
+                validData: function(data){
+                    var has = this.you ? this.youData : this.otherData;
+                    //排除还没有下5个棋子的情况
+                    if(Object.keys(has).length < 5){
+                        return false;
+                    }
+                    var valid = false;
+                    for(var i = 0, l = data.length; i < l; i++){
+                        valid = data[i].every(function(e){
+                            return has[e] == true;
+                        });
+                        if(valid) break;
+                    }
+
+                    return valid;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
